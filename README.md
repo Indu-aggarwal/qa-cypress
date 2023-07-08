@@ -1,4 +1,4 @@
-# spring-qa-cypress
+# qa-cypress
 
 ## 💻 Pre-requisites
 1. Node JS
