@@ -4,7 +4,7 @@
   "description": "Cypress e2e automation tests",
   "main": "index.js",
   "scripts": {
-    "cy:qa:regression": "cypress run --spec cypress/e2e/regression-tests",
+    "cy:qa:regression": "cypress run --spec cypress/e2e/features",
     "allure:report": "allure generate cypress/reports/allure-results --clean -o cypress/reports/allure-report",
     "cy:qa:test:allure": "npm run cy:qa:regression || npm run allure:report",
     "cy:qa:regression:cucumber": "cypress run --env ENV=qa -e TAGS='@regression' || node cucumber-html.js"
