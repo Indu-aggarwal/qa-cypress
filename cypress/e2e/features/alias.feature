@@ -8,6 +8,6 @@ Feature: Aliasing
 
 
     Scenario Outline: Alias a route for later use
-        Given I visit cypress.io 
+        Given I visit cypress.io
         When I declare the route as an alias
         Then I should be to click on the element after waiting for the route

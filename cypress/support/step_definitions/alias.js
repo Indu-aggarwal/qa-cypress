@@ -29,7 +29,7 @@ Then(`I should be to click on the element after waiting for the route`, () => {
 
     // https://on.cypress.io/wait
     cy.wait('@getComment')
-    .its('response.statusCode')
-    .should('eq', 200)
+        .its('response.statusCode')
+        .should('eq', 200)
 });
 
