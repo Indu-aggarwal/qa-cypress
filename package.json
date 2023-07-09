@@ -1,27 +1,24 @@
 {
-  "name": "spring-qa-cypress",
+  "name": "qa-cypress",
   "version": "1.0.0",
   "description": "Cypress e2e automation tests",
   "main": "index.js",
   "scripts": {
-    "cy:qa:regression": "cypress run --spec cypress/e2e/regression-tests --env ENV=qa",
-    "cy:qa:regression:allure:record": "npm run cy:qa:regression --record --key 9b33f979-2dc8-410b-b2be-8ef1e0bc2944 --parallel",
+    "cy:qa:regression": "cypress run --spec cypress/e2e/regression-tests",
     "allure:report": "allure generate cypress/reports/allure-results --clean -o cypress/reports/allure-report",
     "cy:qa:test:allure": "npm run cy:qa:regression || npm run allure:report",
-    "cy:qa:test:allure:record": "npm run cy:qa:regression:allure:record || npm run allure:report",
-    "cy:qa:regression:cucumber": "cypress run --env ENV=qa -e TAGS='@regression' || node cucumber-html.js",
-    "cy:qa:regression:cucumber:record": "cypress run --env ENV=qa -e TAGS='@regression' --record --key 9b33f979-2dc8-410b-b2be-8ef1e0bc2944 --parallel || node cucumber-html.js"
+    "cy:qa:regression:cucumber": "cypress run --env ENV=qa -e TAGS='@regression' || node cucumber-html.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/recyclabox/spring-qa-cypress.git"
+    "url": "git+https://github.com/Indu-aggarwal/qa-cypress.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/recyclabox/spring-qa-cypress/issues"
+    "url": "https://github.com/Indu-aggarwal/qa-cypress/issues"
   },
-  "homepage": "https://github.com/recyclabox/spring-qa-cypress#readme",
+  "homepage": "https://github.com/Indu-aggarwal/qa-cypress#readme",
   "dependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^16.0.3",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
